@@ -1,0 +1,93 @@
+﻿/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* -------------- */
+
+/* Очень полезная информация */
+
+https://learn.javascript.ru/css-selectors
+
+/* Все тэги */
+*{
+}
+
+/* Селектор id */
+#id-block {
+}
+
+/* Селектор тега */
+div {
+}
+
+/* Все тэги А внутри тэгов div */
+div a
+
+/* Смешанный селектор* - все тэги div с классом блок/
+div.block {
+}
+
+/* Селектор класса */
+.block {
+}
+
+/* Все объекты с классами 
+content И text одновременно */
+.content.text {
+}
+
+.content,
+.text {
+}
+
+/* Все объекты с классам text, внутри
+ всех объектов с классом content
+ */
+.content .text {
+}
+
+/* Все теги A с классом text */
+a.text {
+}
+
+/* Все теги A внутри всех 
+объектов с классом text */
+.text a {
+}
+
+/* теги А первого уровня внутри всех 
+объектов с классом text */
+.text > a {
+}
+
+/* обращение ко всем объектам с классом .block после 
+объектов с классом text */
+.text + .block {
+}
